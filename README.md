@@ -4,6 +4,8 @@ MoHGE: Mixture of Heterogeneous Grouped Experts for Language Modeling.
 
 Paper: http://arxiv.org/abs/2604.23108
 
+Accepted to ACL 2026 Industry Track.
+
 This repository contains the MoHGE implementation built on top of [Alibaba Pai-Megatron-Patch](https://github.com/alibaba/Pai-Megatron-Patch). The MoHGE model code is under `megatron_patch/model/DeepSeek_MoHGE`, and the 3B pretraining example is under `examples/MoHGE-3B`.
 
 ## Environment
