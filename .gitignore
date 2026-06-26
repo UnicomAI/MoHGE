@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+conda-meta/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Third-party code placed next to this patch repository
+Megatron-LM-250207/
+
+# Training outputs
+workspace/
+examples/**/workspace/
+outputs/
+logs/
+tensorboard/
+checkpoint/
+checkpoints/
+*.log
+*.out
+out_*.txt
+routing_map*.txt
+
+# Datasets and model artifacts
+/data/
+/datasets/
+examples/**/data/
+examples/**/datasets/
+*.bin
+*.idx
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Papers and local notes
+*.pdf
+*.docx
+*.pptx
+*.xlsx
