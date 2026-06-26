@@ -25,22 +25,22 @@ pip install transformers datasets einops sentencepiece tiktoken
 
 For distributed training, make sure `torchrun`, NCCL, CUDA, and the NVIDIA driver are visible on every node.
 
-## Download Megatron-LM-250207
+## Download Megatron-LM
 
-Place the Megatron-LM snapshot named `Megatron-LM-250207` in the root of this repository:
+Place the Megatron-LM snapshot in the root of this repository and name the directory `Megatron-LM`:
 
 ```bash
 cd /path/to/Pai-Megatron-Patch-MoHGE
 
-# Use the exact Megatron-LM-250207 snapshot used for your experiments.
+# Use the exact Megatron-LM snapshot used for your experiments.
 # If you have a tarball:
-tar -xf /path/to/Megatron-LM-250207.tar.gz
+tar -xf /path/to/Megatron-LM.tar.gz
 
 # Or clone Megatron-LM into the expected directory and checkout your target commit.
-git clone https://github.com/NVIDIA/Megatron-LM.git Megatron-LM-250207
+git clone https://github.com/NVIDIA/Megatron-LM.git Megatron-LM
 ```
 
-The training scripts add both this repository and `./Megatron-LM-250207` to `PYTHONPATH`.
+The training scripts add both this repository and `./Megatron-LM` to `PYTHONPATH`.
 
 ## Prepare Data and Tokenizer
 
@@ -94,4 +94,4 @@ TOTAL_TOKENS=1066793903690
 OUTPUT_LOG=./workspace/output_mohge_3b_pretrain
 ```
 
-Training outputs are written to `examples/MoHGE-3B/workspace/` by default. This directory, datasets, checkpoints, logs, local papers, and the local `Megatron-LM-250207/` snapshot are ignored by Git.
+Training outputs are written to `examples/MoHGE-3B/workspace/` by default. This directory, datasets, checkpoints, logs, local papers, and the local `Megatron-LM/` snapshot are ignored by Git.

@@ -9,7 +9,7 @@ fi
 ENV="$1"
 CURRENT_DIR="$(cd "$(dirname "$0")" && pwd)"
 MEGATRON_PATH="$(dirname "$(dirname "${CURRENT_DIR}")")"
-export PYTHONPATH="${MEGATRON_PATH}:${MEGATRON_PATH}/Megatron-LM-250207:${PYTHONPATH:-}"
+export PYTHONPATH="${MEGATRON_PATH}:${MEGATRON_PATH}/Megatron-LM:${PYTHONPATH:-}"
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 
 MP_DATASET_TYPE="${MP_DATASET_TYPE:-idxmap}"

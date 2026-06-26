@@ -18,7 +18,7 @@ Thumbs.db
 .vscode/
 
 # Third-party code placed next to this patch repository
-Megatron-LM-250207/
+Megatron-LM/
 
 # Training outputs
 workspace/
